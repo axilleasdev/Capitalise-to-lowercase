@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Converter</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="convertapp">
+  <h1 id="header">Μετατροπή Κειμένου</h1>
+  <p>Εισαγάγετε κάποιο κείμενο στο πεδίο εισαγωγής και επιλέξτε τη λειτουργία μετατροπής από το αναπτυσσόμενο μενού:</p>
+  <input type="textarea" id="inputText">
+  <select id="conversionMode">
+    <option value="lowercase">ΚΕΦΑΛΑΙΑ σε Πεζά</option>
+    <option value="capitalized">Πεζά σε ΚΕΦΑΛΑΙΑ</option>
+  </select>
+  <label id="labelFirstLetter"><input type="checkbox" id="keepFirstLetterCapitalized"> Κρατήστε το πρώτο γράμμα κεφαλαίο</label>
+  <button onclick="convertText()">Μετατροπή</button>
+  <p id="output"></p>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
