@@ -1,0 +1,35 @@
+
+body {
+background-color: #ECEBFA;
+font-family: 'Open sans';
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+align-content: center;
+margin-top: 40px;
+}
+
+
+
+h1 {
+    font-size: 50px;
+}
+
+
+#convertapp{
+    width: 780px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-top: 40px;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+}
+
+h1#header{
+    color: #232323;
+    margin-left: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
