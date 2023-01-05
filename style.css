@@ -26,6 +26,47 @@ h1 {
     box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
 }
 
+#details{
+    font-size: 18px;
+    background: #F8ECEC none repeat scroll 0% 0%;
+    color: black;
+    padding: 22px 25px;
+    border-radius: 5px 5px 0px 0px;
+    margin: auto;
+    text-shadow: none;
+    text-align: center;
+}
+
+p#details{
+    margin-bottom: 40px;
+}
+
+#labelFirstLetter{
+    display: block;
+    text-align: center;
+
+}
+
+
+#btn-submit{
+    background-color: #202432;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    border: 0;
+    padding: 17px 25px;
+    border-radius: 0 0 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#output{
+text-align: center;
+font-size: 25px;
+}
+
 h1#header{
     color: #232323;
     margin-left: 20px;
