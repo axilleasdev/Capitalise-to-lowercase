@@ -32,13 +32,9 @@ function convertText() {
 }
 
 
-
-function toSentenceCase(text) {
+function toSentenceCase(input) {
   return input.toLowerCase().replace(/(^|\.\s+)\S/g, function(c) { return c.toUpperCase(); });
 }
-let sentenceCaseText = toSentenceCase(input);
-
-
 
 
 function convertToTitleCase(input) {
