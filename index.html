@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Text Converter</title>
   <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
   <a href="/"><img id="logo" src="https://terms.darc.ai/images/darc_logo.png" /></a>
-    <div id="convertapp">
-  <h1 id="header">Μετατροπή Κειμένου!!</h1>
-  <p id="details">Εισαγάγετε κάποιο κείμενο στο πεδίο εισαγωγής και επιλέξτε τη λειτουργία μετατροπής από το αναπτυσσόμενο μενού:</p>
-  <input type="textarea" id="inputText" rows="4" cols="50">
-  <select id="conversionMode">
-    <option value="lowercase">ΚΕΦΑΛΑΙΑ σε Πεζά</option>
-    <option value="capitalized">Πεζά σε ΚΕΦΑΛΑΙΑ</option>
-    <option value="toSentenceCase">Σε ΚΕΦΑΛΑΙΑ μετά απο τελία</option>
-    <option value="titled">Σε Κεφαλαία</option>
-  </select>
-  <label id="labelFirstLetter"><input type="checkbox" id="keepFirstLetterCapitalized"> Κρατήστε το πρώτο γράμμα κεφαλαίο</label>
-  <button id="btn-submit" onclick="convertText()">Μετατροπή</button>
-  <p id="output"></p>
-</div>
-<script src="index.js"></script>
+  <div id="convertapp">
+    <h1 id="header">Μετατροπή Κειμένου!!</h1>
+    <p id="details">Εισαγάγετε κάποιο κείμενο στο πεδίο εισαγωγής και επιλέξτε τη λειτουργία μετατροπής από το
+      αναπτυσσόμενο μενού:</p>
+    <input type="textarea" placeholder="Εισάγετε το κείμενο σας" id="inputText" rows="4" cols="50">
+    <select id="conversionMode">
+      <option value="lowercase">ΚΕΦΑΛΑΙΑ σε Πεζά</option>
+      <option value="capitalized">Πεζά σε ΚΕΦΑΛΑΙΑ</option>
+      <option value="toSentenceCase">ΚΕΦΑΛΑΙΑ μετά την τελία</option>
+      <option value="titled">ΠεζοΚεφαλαία</option>
+    </select>
+    <div class="labelFirstLetterdiv">
+      <label id="labelFirstLetter"><input type="checkbox" id="keepFirstLetterCapitalized"> Κρατήστε το πρώτο γράμμα
+        κεφαλαίο</label>
+    </div>
+    <button id="btn-submit" onclick="convertText()">Μετατροπή</button>
+    <p id="output"></p>
+  </div>
+  <script src="index.js"></script>
 </body>
+
 </html>

@@ -16,6 +16,51 @@ h1 {
     font-size: 50px;
 }
 
+select {
+    /* Reset */
+    border: 1px solid #eee;
+    outline: 0;
+    /* Personalize */
+    height: 3em;
+    padding: 0 4em 0 1em;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    
+    /* Remove focus outline */
+}
+    select:focus {
+      outline: none;
+    }
+
+    select::-ms-expand {
+      display: none;
+    }
+  
+
+  option {
+    color: black;
+    background-color: white;
+  }
+
+  .labelFirstLetterdiv{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+  }
+
+#inputText{
+    border-radius: 5px;
+    border: 1px solid #eee;
+    margin-bottom: 15px;
+    width: 60%;
+    height: 40px;
+    float: left;
+    padding: 0px 15px;
+}
 
 #convertapp{
     width: 780px;

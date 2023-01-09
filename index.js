@@ -1,11 +1,11 @@
 
 
-// if(document.getElementById('conversionMode').value == "lowercase") {
-//     document.getElementById("labelFirstLetter").style.display = "block";
+if(document.getElementById('conversionMode').value == "lowercase") {
+    document.getElementById("labelFirstLetter").style.display = "block";
 
-// } else {
-//     document.getElementById("labelFirstLetter").style.display = "none";
-// }
+} else {
+    document.getElementById("labelFirstLetter").style.display = "none";
+}
 
 
 
@@ -21,7 +21,7 @@ function convertText() {
       output = input.toLowerCase();
     }
   } else if (mode === "capitalized") {
-    output = input.toUpperCase();
+    output = removeStress(input).toUpperCase();
 
   } else if (mode === "titled") {
     output =  convertToTitleCase(input);
@@ -36,6 +36,10 @@ function toSentenceCase(input) {
   return input.toLowerCase().replace(/(^|\.\s+)\S/g, function(c) { return c.toUpperCase(); });
 }
 
+
+function removeStress(input) {
+  return input.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+}
 
 function convertToTitleCase(input) {
   let words = input.split(" ");
