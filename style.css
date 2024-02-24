@@ -1,16 +1,13 @@
-
 body {
-background-color: #ECEBFA;
-font-family: 'Open sans';
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-align-content: center;
-margin-top: 40px;
+    background-color: #ECEBFA;
+    font-family: 'Open sans';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 40px;
 }
-
-
 
 h1 {
     font-size: 50px;
@@ -28,31 +25,30 @@ select {
     border-radius: 5px;
     cursor: pointer;
     margin-left: 10px;
-    
     /* Remove focus outline */
 }
-    select:focus {
-      outline: none;
-    }
 
-    select::-ms-expand {
-      display: none;
-    }
-  
+select:focus {
+    outline: none;
+}
 
-  option {
+select::-ms-expand {
+    display: none;
+}
+
+option {
     color: black;
     background-color: white;
-  }
+}
 
-  .labelFirstLetterdiv{
+.labelFirstLetterdiv {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     width: 100%;
-  }
+}
 
-#inputText{
+#inputText {
     border-radius: 5px;
     border: 1px solid #eee;
     margin-bottom: 15px;
@@ -62,7 +58,7 @@ select {
     padding: 0px 15px;
 }
 
-#convertapp{
+#convertapp {
     width: 780px;
     padding: 40px;
     background-color: #ffffff;
@@ -71,7 +67,7 @@ select {
     box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
 }
 
-#details{
+#details {
     font-size: 18px;
     background: #F8ECEC none repeat scroll 0% 0%;
     color: black;
@@ -82,18 +78,16 @@ select {
     text-align: center;
 }
 
-p#details{
+p#details {
     margin-bottom: 40px;
 }
 
-#labelFirstLetter{
+#labelFirstLetter {
     display: block;
     text-align: center;
-
 }
 
-
-#btn-submit{
+#btn-copy {
     background-color: #202432;
     color: #fff;
     text-align: center;
@@ -107,12 +101,16 @@ p#details{
     font-weight: bold;
 }
 
-#output{
-text-align: center;
-font-size: 25px;
+button:hover {
+    background-color: #747483 !important;
 }
 
-h1#header{
+#output {
+    text-align: center;
+    font-size: 25px;
+}
+
+h1#header {
     color: #232323;
     margin-left: 20px;
     position: relative;
